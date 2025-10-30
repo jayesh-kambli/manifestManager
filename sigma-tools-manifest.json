@@ -1,11 +1,55 @@
 {
+  "schemaVersion": 1,
+  "plugin": "SigmaTools",
+
+  "publicKeys": [],
+
+  "meta": {
+    "latestVersion": "1.0.1",
+    "docs": "https://example.com/sigmatools/changelog"
+  },
+
   "minJava": "17",
-  "minServer": "1.19",
-  "maxServerTested": "1.21.1",
+  "maxServerTested": "1.21.6",
 
-  "latestVersion": "1.0.3",
-  "minRequiredVersion": "1.0.2",
+  "rules": [
+    {
+      "id": "require-min-java",
+      "match": { "java": "<17" },
+      "severity": "block",
+      "message": "Java 17+ required for this build.",
+      "graceHours": 0
+    },
+    {
+      "id": "min-plugin-version",
+      "match": { "pluginVersion": "<1.0.0" },
+      "severity": "block",
+      "message": "Your SigmaTools is too old. Minimum required: 1.0.0.",
+      "graceHours": 0
+    },
+    {
+      "id": "kill-specific-bad-builds",
+      "match": { "pluginVersionIn": [] },
+      "severity": "block",
+      "message": "This version is blocked by policy.",
+      "graceHours": 0
+    },
+    {
+      "id": "server-newer-than-tested",
+      "match": { "mc": ">1.21.6" },
+      "severity": "warn",
+      "message": "Server is newer than tested (tested ≤ 1.21.6).",
+      "graceHours": 0
+    },
+    {
+      "id": "update-available",
+      "match": { "pluginVersion": "<1.0.1" },
+      "severity": "info",
+      "message": "Update available: 1.0.1.",
+      "graceHours": 0
+    }
+  ],
 
-  "killVersions": ["1.0.1"],
-  "message": "Critical issue in 1.0.1. Please update to the latest version."
+  "updatedAt": "2025-10-30T18:25:00Z",
+  "expiresAt": "2026-10-30T00:00:00Z"
 }
