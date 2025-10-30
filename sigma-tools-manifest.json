@@ -6,6 +6,6 @@
   "latestVersion": "1.0.3",
   "minRequiredVersion": "1.0.2",
 
-  "killVersions": ["1.0.1"],
+  "killVersions": [],
   "message": "Critical issue in 1.0.1. Please update to the latest version."
 }
