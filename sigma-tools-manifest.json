@@ -1,0 +1,11 @@
+{
+    "minJava": "17",
+    "minServer": "1.19",
+    "maxServerTested": "1.21.1",
+  
+    "latestVersion": "1.0.3",
+    "minRequiredVersion": "1.0.2",
+  
+    "killVersions": [],
+    "message": "All good."
+  }
