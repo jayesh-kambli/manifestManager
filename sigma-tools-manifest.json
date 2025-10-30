@@ -41,13 +41,7 @@
       "message": "Server is newer than tested (tested ≤ 1.21.6).",
       "graceHours": 0
     },
-    {
-      "id": "update-available",
-      "match": { "pluginVersion": "<1.0.1" },
-      "severity": "info",
-      "message": "Update available: 1.0.1.",
-      "graceHours": 0
-    }
+    { "id": "update-available", "match": { "pluginVersion": "<1.0.3" }, "severity": "info", "message": "Update available: 1.0.3.", "graceHours": 0 }
   ],
 
   "updatedAt": "2025-10-30T18:25:00Z",
