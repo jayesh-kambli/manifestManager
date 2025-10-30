@@ -47,9 +47,10 @@
 
   "sign": {
     "algo": "ed25519",
-    "keyId thi": "ed25519:BASE64_PUBLIC_KEY_OPTIONAL",
-    "signature": "BASE64_SIGNATURE_OPTIONAL"
-  },
+    "keyId": "ed25519:MCowBQYDK2VwAyEAJIZEeWeKqjWOUd+Py++eNixOg01OMAbdv8HQytQMpZI=",
+    "severity": "warn",
+    "signature": "UFWVZhw+bf6XVy0jvmtN7DhLb2SYJiusId5CypFXUi+nek4NUXt6feI3hkNLCiIq4vq5UTWoDBYKm1rKthfuBA=="
+  }
 
   "updatedAt": "2025-10-30T18:30:00Z",
   "expiresAt": "2026-10-30T00:00:00Z"
