@@ -17,33 +17,40 @@
       "id": "require-min-java",
       "match": { "java": "<17" },
       "severity": "block",
-      "message": "Java 17+ required for this build.",
-      "graceHours": 0
+      "message": "Java 17+ required for this build."
     },
     {
       "id": "min-plugin-version",
       "match": { "pluginVersion": "<1.0.0" },
       "severity": "block",
-      "message": "Your SigmaTools is too old. Minimum required: 1.0.0.",
-      "graceHours": 0
+      "message": "Minimum required version is 1.0.0."
     },
     {
       "id": "kill-specific-bad-builds",
       "match": { "pluginVersionIn": [] },
       "severity": "block",
-      "message": "This version is blocked by policy.",
-      "graceHours": 0
+      "message": "This version is blocked by policy."
     },
     {
       "id": "server-newer-than-tested",
       "match": { "mc": ">1.21.6" },
       "severity": "warn",
-      "message": "Server is newer than tested (tested ≤ 1.21.6).",
-      "graceHours": 0
+      "message": "Server is newer than tested (tested ≤ 1.21.6)."
     },
-    { "id": "update-available", "match": { "pluginVersion": "<1.0.1" }, "severity": "info", "message": "Update available: 1.0.1.", "graceHours": 0 }
+    {
+      "id": "update-available",
+      "match": { "pluginVersion": "<1.0.1" },
+      "severity": "info",
+      "message": "Update available: 1.0.1."
+    }
   ],
 
-  "updatedAt": "2025-10-30T18:25:00Z",
+  "sign": {
+    "algo": "ed25519",
+    "keyId thi": "ed25519:BASE64_PUBLIC_KEY_OPTIONAL",
+    "signature": "BASE64_SIGNATURE_OPTIONAL"
+  },
+
+  "updatedAt": "2025-10-30T18:30:00Z",
   "expiresAt": "2026-10-30T00:00:00Z"
 }
