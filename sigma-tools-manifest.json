@@ -1,11 +1,11 @@
 {
-    "minJava": "17",
-    "minServer": "1.19",
-    "maxServerTested": "1.21.1",
-  
-    "latestVersion": "1.0.3",
-    "minRequiredVersion": "1.0.2",
-  
-    "killVersions": [],
-    "message": "All good."
-  }
+  "minJava": "17",
+  "minServer": "1.19",
+  "maxServerTested": "1.21.1",
+
+  "latestVersion": "1.0.3",
+  "minRequiredVersion": "1.0.2",
+
+  "killVersions": ["1.0.1"],
+  "message": "Critical issue in 1.0.1. Please update to the latest version."
+}
