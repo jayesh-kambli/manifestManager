@@ -1,57 +1,48 @@
 {
   "schemaVersion": 1,
   "plugin": "SigmaTools",
-
-  "publicKeys": [],
-
-  "meta": {
-    "latestVersion": "1.0.1",
-    "docs": "https://example.com/sigmatools/changelog"
-  },
-
   "minJava": "17",
   "maxServerTested": "1.21.6",
-
   "rules": [
     {
       "id": "require-min-java",
-      "match": { "java": "<17" },
+      "match": {
+        "java": "<17"
+      },
       "severity": "block",
       "message": "Java 17+ required for this build."
     },
     {
       "id": "min-plugin-version",
-      "match": { "pluginVersion": "<1.0.0" },
+      "match": {
+        "pluginVersion": "<1.0.2"
+      },
       "severity": "block",
-      "message": "Minimum required version is 1.0.0."
+      "message": "Minimum required version is 1.0.2."
     },
     {
       "id": "kill-specific-bad-builds",
-      "match": { "pluginVersionIn": [] },
+      "match": {
+        "pluginVersionIn": []
+      },
       "severity": "block",
       "message": "This version is blocked by policy."
     },
     {
       "id": "server-newer-than-tested",
-      "match": { "mc": ">1.21.6" },
+      "match": {
+        "mc": ">1.21.6"
+      },
       "severity": "warn",
       "message": "Server is newer than tested (tested ≤ 1.21.6)."
     },
     {
       "id": "update-available",
-      "match": { "pluginVersion": "<1.0.1" },
+      "match": {
+        "pluginVersion": "<1.0.2"
+      },
       "severity": "info",
-      "message": "Update available: 1.0.1."
+      "message": "Update available: 1.0.2."
     }
-  ],
-
-  "sign": {
-    "algo": "ed25519",
-    "keyId": "ed25519:MCowBQYDK2VwAyEAJIZEeWeKqjWOUd+Py++eNixOg01OMAbdv8HQytQMpZI=",
-    "severity": "warn",
-    "signature": "UFWVZhw+bf6XVy0jvmtN7DhLb2SYJiusId5CypFXUi+nek4NUXt6feI3hkNLCiIq4vq5UTWoDBYKm1rKthfuBA=="
-  }
-
-  "updatedAt": "2025-10-30T18:30:00Z",
-  "expiresAt": "2026-10-30T00:00:00Z"
+  ]
 }
