@@ -15,10 +15,10 @@
     {
       "id": "min-plugin-version",
       "match": {
-        "pluginVersion": "<1.0.2"
+        "pluginVersion": "<1.0.1"
       },
       "severity": "block",
-      "message": "Minimum required version is 1.0.2."
+      "message": "Minimum required version is 1.0.1"
     },
     {
       "id": "kill-specific-bad-builds",
@@ -39,10 +39,10 @@
     {
       "id": "update-available",
       "match": {
-        "pluginVersion": "<1.0.2"
+        "pluginVersion": "<1.0.3"
       },
       "severity": "info",
-      "message": "Update available: 1.0.2."
+      "message": "Update available: 1.0.3"
     }
   ]
 }
