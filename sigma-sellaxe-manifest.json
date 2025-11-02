@@ -1,0 +1,44 @@
+{
+  "schemaVersion": 1,
+  "plugin": "SigmaSellAxe",
+  "minJava": "17",
+  "maxServerTested": "1.21.6",
+  "meta": {
+    "latestVersion": "2.0.4"
+  },
+  "rules": [
+    {
+      "id": "update-check",
+      "severity": "info",
+      "message": "Update available: 2.0.4",
+      "match": {
+        "pluginVersion": "<2.0.4"
+      }
+    },
+    {
+      "id": "server-compatibility-warn",
+      "severity": "warn",
+      "message": "Server version may not be fully tested. Max tested: 1.21.6",
+      "match": {
+        "mc": ">1.21.6"
+      }
+    },
+    {
+      "id": "java-version-block",
+      "severity": "block",
+      "message": "Java version too old. Minimum required: Java 17",
+      "match": {
+        "java": "<17"
+      }
+    },
+    {
+      "id": "incompatible-versions-block",
+      "severity": "block",
+      "message": "This version has critical bugs and is blocked. Please update.",
+      "match": {
+        "pluginVersionIn": ["2.0.0", "2.0.1"]
+      }
+    }
+  ]
+}
+
