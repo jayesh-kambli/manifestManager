@@ -1,7 +1,7 @@
 {
   "schemaVersion": 1,
   "plugin": "SigmaOrders",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "minJava": "21",
   "maxServerTested": "1.21.6",
   "rules": [
@@ -40,10 +40,10 @@
     {
       "id": "update-available",
       "match": {
-        "pluginVersion": "<1.0.0"
+        "pluginVersion": "<1.0.1"
       },
       "severity": "info",
-      "message": "Update available: 1.0.0"
+      "message": "Update available: 1.0.1"
     }
   ]
 }
