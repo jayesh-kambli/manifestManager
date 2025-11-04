@@ -1,0 +1,50 @@
+{
+  "schemaVersion": 1,
+  "plugin": "SigmaOrders",
+  "version": "1.0.0",
+  "minJava": "21",
+  "maxServerTested": "1.21.6",
+  "rules": [
+    {
+      "id": "require-min-java",
+      "match": {
+        "java": "<21"
+      },
+      "severity": "block",
+      "message": "Java 21+ required for this build."
+    },
+    {
+      "id": "min-plugin-version",
+      "match": {
+        "pluginVersion": "<1.0.0"
+      },
+      "severity": "block",
+      "message": "Minimum required version is 1.0.0"
+    },
+    {
+      "id": "kill-specific-bad-builds",
+      "match": {
+        "pluginVersionIn": []
+      },
+      "severity": "block",
+      "message": "This version is blocked by policy."
+    },
+    {
+      "id": "server-newer-than-tested",
+      "match": {
+        "mc": ">1.21.6"
+      },
+      "severity": "warn",
+      "message": "Server is newer than tested (tested ≤ 1.21.6)."
+    },
+    {
+      "id": "update-available",
+      "match": {
+        "pluginVersion": "<1.0.0"
+      },
+      "severity": "info",
+      "message": "Update available: 1.0.0"
+    }
+  ]
+}
+
