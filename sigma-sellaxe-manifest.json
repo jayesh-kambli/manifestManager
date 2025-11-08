@@ -4,15 +4,15 @@
   "minJava": "17",
   "maxServerTested": "1.21.6",
   "meta": {
-    "latestVersion": "2.0.7"
+    "latestVersion": "2.0.8"
   },
   "rules": [
     {
       "id": "update-check",
       "severity": "info",
-      "message": "Update available: 2.0.7",
+      "message": "Update available: 2.0.8",
       "match": {
-        "pluginVersion": "<2.0.7"
+        "pluginVersion": "<2.0.8"
       }
     },
     {
