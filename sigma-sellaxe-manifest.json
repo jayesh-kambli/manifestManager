@@ -2,7 +2,7 @@
   "schemaVersion": 1,
   "plugin": "SigmaSellAxe",
   "minJava": "17",
-  "maxServerTested": "1.21.6",
+  "maxServerTested": "1.21.8",
   "meta": {
     "latestVersion": "2.0.10"
   },
