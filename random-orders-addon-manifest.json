@@ -32,7 +32,7 @@
     {
       "id": "server-newer-than-tested",
       "match": {
-        "mc": ">1.21.6"
+        "mc": ">1.21.11"
       },
       "severity": "warn",
       "message": "Server is newer than tested (tested ≤ 1.21.11)."
