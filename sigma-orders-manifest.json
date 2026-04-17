@@ -35,7 +35,7 @@
         "mc": ">1.21.11"
       },
       "severity": "warn",
-      "message": "Server is newer than tested (tested ≤ 1.21.6)."
+      "message": "Server is newer than tested (tested ≤ 1.21.11)."
     },
     {
       "id": "update-available",
