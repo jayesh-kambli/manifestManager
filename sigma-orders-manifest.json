@@ -2,6 +2,7 @@
   "schemaVersion": 1,
   "plugin": "SigmaOrders",
   "version": "2.0.1",
+  "pluginUrl": "https://builtbybit.com/resources/82221",
   "minJava": "21",
   "maxServerTested": "1.21.11",
   "rules": [
