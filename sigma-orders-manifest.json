@@ -41,10 +41,10 @@
     {
       "id": "update-available",
       "match": {
-        "pluginVersion": "<2.0.4"
+        "pluginVersion": "<2.0.6"
       },
       "severity": "info",
-      "message": "Update available: 2.0.4"
+      "message": "Update available: 2.0.6"
     }
   ]
 }
