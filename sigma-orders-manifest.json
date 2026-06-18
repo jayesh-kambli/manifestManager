@@ -1,7 +1,7 @@
 {
   "schemaVersion": 1,
   "plugin": "SigmaOrders",
-  "version": "2.0.8",
+  "version": "2.0.9",
   "pluginUrl": "https://builtbybit.com/resources/82221",
   "minJava": "21",
   "maxServerTested": "1.21.11",
@@ -41,10 +41,10 @@
     {
       "id": "update-available",
       "match": {
-        "pluginVersion": "<2.0.8"
+        "pluginVersion": "<2.0.9"
       },
       "severity": "info",
-      "message": "Update available: 2.0.8"
+      "message": "Update available: 2.0.9"
     }
   ]
 }
