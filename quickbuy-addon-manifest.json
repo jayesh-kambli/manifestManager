@@ -1,0 +1,50 @@
+{
+  "schemaVersion": 1,
+  "plugin": "QuickBuyAddon",
+  "version": "1.0.0",
+  "pluginUrl": "https://builtbybit.com/resources/quickbuy-addon",
+  "minJava": "21",
+  "maxServerTested": "1.21.11",
+  "rules": [
+    {
+      "id": "require-min-java",
+      "match": {
+        "java": "<21"
+      },
+      "severity": "block",
+      "message": "Java 21+ is required for QuickBuy Addon."
+    },
+    {
+      "id": "min-plugin-version",
+      "match": {
+        "pluginVersion": "<1.0.0"
+      },
+      "severity": "block",
+      "message": "Minimum supported version is 1.0.0. Please update."
+    },
+    {
+      "id": "kill-specific-bad-builds",
+      "match": {
+        "pluginVersionIn": []
+      },
+      "severity": "block",
+      "message": "This build has been blocked by policy."
+    },
+    {
+      "id": "server-newer-than-tested",
+      "match": {
+        "mc": ">1.21.11"
+      },
+      "severity": "warn",
+      "message": "Server is newer than tested (tested up to 1.21.11). Things may still work, but proceed with caution."
+    },
+    {
+      "id": "update-available",
+      "match": {
+        "pluginVersion": "<1.0.0"
+      },
+      "severity": "info",
+      "message": "Update available: 1.0.0"
+    }
+  ]
+}
